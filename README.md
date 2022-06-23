@@ -1,5 +1,5 @@
 # Digital-clock
-디지털 시계 앱 제작
+디지털 시계 앱 제작 https://hamhmin.github.io/Digital-clock/
 
 ## 소개
 - 벽걸이 디지털 시계를 표현한 디지털 시계 앱
