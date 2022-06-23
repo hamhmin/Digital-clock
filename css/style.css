@@ -28,10 +28,10 @@ body{
     transform:
     perspective(280px)
     rotateY(18deg)
-    skewY(-3deg)
+    skewY(-6deg)
     ;
     color: #fff;
-    text-shadow:-10px 10px  #333,0px 0px 8px #fff,
+    text-shadow:-10px 10px  #333,0 0 8px #fff,0 0 50px #fff, 
     0 0 30px #fff, 4px 4px 100px #fff, 8px 8px 150px #fff;
 }
 
@@ -40,15 +40,17 @@ body{
     font-weight: 700;
     position: absolute;
     bottom:-50px;
-    right: 100px;
+    right: 30px;
     color: #fff;
     transform:skewY(2deg);
 }
 .ap{
+    width: 100px;
     position: absolute;
     right: 30px;
     top: 20px;
-    line-height: 60px;
-    font-size: 60px;
-    text-align: left;
+    line-height: 50px;
+    font-size: 50px;
+    text-align: right;
+    color: #fff;
 }
