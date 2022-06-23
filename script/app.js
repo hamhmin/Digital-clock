@@ -22,22 +22,7 @@ $(function () {
         $('.hour').html(h);
         $('.min').html(m);
         $('.sec').html(s);
-        // if(h < 10){
-        //     $('.hour').html(`0${h}`);
-        // }else{
-        //     $('.hour').html(h);
-        // }
-        // if(m < 10){
-        //     $('.min').html(`0${m}`);
-        // }else{
-        //     $('.min').html(m);
-        // }
-        // if(s < 10){
-        //     $('.sec').html(`0${s}`);
-        // }else{
-        //     $('.sec').html(s);
-        // }
-
+        
         // 오전 오후 표시 24시간제 if()
         
         if(h < 12){
@@ -46,14 +31,7 @@ $(function () {
             $('.am').html('PM');
         }
 
-        // 알람기능: 50분이 되면 '휴식시간' 경고창 띄우기
-
-        if(m == 50){
-            alert('휴식시간');
-        }
-
-        
-
+       
         // 요일 출력
         if(day == 1){
             today = ('MON');
