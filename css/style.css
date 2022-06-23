@@ -1,6 +1,6 @@
 @font-face{
     font-family:'digital-7 mono', monospace;
-    src: url('font/digital-7-mono.ttf');
+    src: url('font/digital-7 mono.ttf');
 }
 
 *{
@@ -9,42 +9,46 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100vw;
     height: 100vh;
+    background: url(../images/wall.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .clock{
-    box-shadow: 
-        4px 4px 6px rgba(0,0,0,0.5),
-        0 0 8px rgba(0,0,0,0.7) inset;
-    width: 450px;
-    height: 140px;
-    display: flex;
-    justify-content: right;
-    padding-right: 30px;
-    align-items: center;
-    border: 10px solid #333;
-    border-radius: 10px;
-    font-size: 80px;
-    font-family: 'digital-7', monospace;
+    top: 30vh;
+    left: 35vw;
+    width: 600px;
+    height: 180px;
+    line-height: 140px;
+    border-radius: 50px;
+    font-size: 130px;
+    font-family: 'digital-7 mono', monospace;
     position: relative;
-    text-align: center;
+    transform:
+    perspective(280px)
+    rotateY(18deg)
+    skewY(-3deg)
+    ;
+    color: #fff;
+    text-shadow:-10px 10px  #333,0px 0px 8px #fff,
+    0 0 30px #fff, 4px 4px 100px #fff, 8px 8px 150px #fff;
 }
+
 .name{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 25px;
+    font-size: 60px;
     font-weight: 700;
     position: absolute;
-    top: -55px;
-    left: 10px;
+    bottom:-50px;
+    right: 100px;
+    color: #fff;
+    transform:skewY(2deg);
 }
 .ap{
     position: absolute;
-    left: 30px;
-    float: left;
-    line-height: 38px;
-    font-size: 40px;
+    right: 30px;
+    top: 20px;
+    line-height: 60px;
+    font-size: 60px;
     text-align: left;
-    color: #999;
 }
