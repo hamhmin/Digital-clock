@@ -2,7 +2,10 @@
     font-family:'digital-7 mono', monospace;
     src: url('font/digital-7 mono.ttf');
 }
-
+:root{
+    --text-shadow1:0 0 8px #fff,0 0 50px #fff, 
+    0 0 30px #fff, 4px 4px 100px #fff, 8px 8px 150px #fff;
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,9 +14,13 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-image: url(../images/wall.jpg);
+    background: url(../images/wall.jpg);
     background-size: cover;
     background-position: center;
+    z-index: -5;
+    position: relative;
+    font-family: 'digital-7 mono', monospace;
+    color: #fff;
 }
 .clock{
     top: 30vh;
@@ -21,28 +28,25 @@ body{
     width: 600px;
     height: 180px;
     line-height: 140px;
-    border-radius: 50px;
-    font-size: 130px;
-    font-family: 'digital-7 mono', monospace;
     position: relative;
     transform:
     perspective(280px)
     rotateY(18deg)
     skewY(-6deg)
     ;
-    color: #fff;
-    text-shadow:-10px 10px  #333,0 0 8px #fff,0 0 50px #fff, 
-    0 0 30px #fff, 4px 4px 100px #fff, 8px 8px 150px #fff;
 }
-
+.time{
+    font-size: 130px;
+    text-shadow:var(--text-shadow1);
+}
 .name{
     font-size: 60px;
-    font-weight: 700;
     position: absolute;
     bottom:-50px;
     right: 30px;
-    color: #fff;
-    transform:skewY(2deg);
+    transform:skewY(4deg);
+    z-index: 1;
+    text-shadow:var(--text-shadow1),-6px 5px 3px rgba(0,0,0,0.6);
 }
 .ap{
     width: 100px;
@@ -52,5 +56,16 @@ body{
     line-height: 50px;
     font-size: 50px;
     text-align: right;
-    color: #fff;
+    z-index: 1;
+    text-shadow:var(--text-shadow1),-6px 5px 3px rgba(0,0,0,0.6);
+}
+.time-neon{
+    text-shadow: none;
+    font-size: 130px;
+    color: rgba(255,255,255,0.3);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    text-shadow: -12px 6px 1px rgba(0,0,0,0.6);
 }
