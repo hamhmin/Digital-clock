@@ -6,7 +6,8 @@
 
 ## 주요내용
 1. HTML, CSS 퍼블리싱(UI 구현)
-2. 오전, 오후 / 요일 기능 추가 (javascript)
+2. javascript, jqeury (오전, 오후 / 요일 기능 추가)
 
 ## 사용라이브러리
-- javascript
+
+- javascript, jqeury
