@@ -44,7 +44,7 @@ body{
     position: absolute;
     bottom:-50px;
     right: 30px;
-    transform:skewY(4deg);
+    transform:skewY(2.5deg);
     z-index: 1;
     text-shadow:var(--text-shadow1),-6px 5px 3px rgba(0,0,0,0.6);
 }
