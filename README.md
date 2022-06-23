@@ -1,6 +1,7 @@
 # Digital-clock
 디지털 시계 앱 제작 https://hamhmin.github.io/Digital-clock/
-![neon digital clock](https://user-images.githubusercontent.com/49775311/175227332-e1a3bce3-1bd8-4bd2-a77b-6fb9ea26075a.JPG)
+![스크린샷](https://user-images.githubusercontent.com/49775311/175234333-63613783-095f-4c5f-b0c1-14eb3dcc5043.JPG)
+
 
 ## 소개
 - 벽걸이 디지털 시계를 표현한 디지털 시계 앱
