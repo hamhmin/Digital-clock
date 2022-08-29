@@ -12,6 +12,12 @@
     box-sizing: border-box;
 }
 body{
+  -ms-overflow-style: none;
+  }
+ ::-webkit-scrollbar {
+   display: none;
+ }
+body{
     width: 100vw;
     height: 100vh;
     background: url(../images/wall.jpg);
