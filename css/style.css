@@ -27,6 +27,7 @@ body{
     position: relative;
     font-family: 'digital-7 mono', monospace;
     color: #fff;
+    overflow:hidden;
 }
 .clock{
     top: 30vh;
